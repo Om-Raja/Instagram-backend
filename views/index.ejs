@@ -22,14 +22,20 @@
 
         <% for(post of posts) { %>
             <div class="post-card">
+                
                 <h3 class="username">
                     <i class="fa-solid fa-circle-user"></i> <%=post.username%>
                 </h3>
+
                 <img class="post-img" src="<%= post.src %>" />
+                <p class="post-caption"><%=post.caption%></p>
+
+                <hr>
                 <div class="btns">
                 <a class="like-btn"><%= post.likes %> <i class="fa-regular fa-heart"></i></a>
                 <a href="/posts/<%=post.id%>/comments" class="comment-btn"><%= post.comments.length %> <i class="fa-regular fa-comment"></i></a>
                 <a class="share-btn"><%= post.shares %> <i class="fa-solid fa-share"></i></i></a>
+                <a class="edit-btn" href="/posts/<%=post.id%>/edit"><i class="fa-solid fa-marker"></i></a>
             </div>
             </div>
             <br>
