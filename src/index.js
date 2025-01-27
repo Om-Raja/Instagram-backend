@@ -19,6 +19,11 @@ app.get("/posts", (req, res) => {
   res.render("index.ejs", {posts: allPostsData});
 });
 
+app.get("/posts/:id/comments", (req, res)=>{
+    const {id} = req.params;
+    let post = allPostsData.find((p)=>(p.id == id));
+    res.render("comments.ejs", {post});
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
