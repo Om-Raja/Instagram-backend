@@ -18,6 +18,11 @@
         <% for(comment of post.comments){%> 
            <p><%= comment %></p><hr>
         <%} %>
+        
+        <form method="post" action="/posts/<%=post.id%>/comments">
+            <input type="text" name="comment" placeholder="Add a comment">
+            <button><i class="fa-regular fa-paper-plane"></i></button>
+        </form>
     </div>
   </body>
 </html>

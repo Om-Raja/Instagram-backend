@@ -24,6 +24,16 @@ app.get("/posts/:id/comments", (req, res)=>{
     let post = allPostsData.find((p)=>(p.id == id));
     res.render("comments.ejs", {post});
 });
+app.post("/posts/:id/comments", (req, res)=>{
+    const {id} = req.params;
+    const newComment = req.body.comment.toString();
+
+    let post = allPostsData.find((p)=>(p.id == id));
+    post.comments.unshift(newComment);
+
+    // res.redirect("/posts/"+id+"/comments");
+    res.redirect(`/posts/${id}/comments`);
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
