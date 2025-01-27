@@ -9,7 +9,9 @@
   "author": "Om Raja",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "uuid": "^11.0.5"
   }
 }
