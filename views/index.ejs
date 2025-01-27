@@ -32,7 +32,7 @@
 
                 <hr>
                 <div class="btns">
-                <a class="like-btn"><%= post.likes %> <i class="fa-regular fa-heart"></i></a>
+                <a href="/posts/<%=post.id%>/likes"><%= post.likes %> <i class="like-btn fa-regular fa-heart"></i></a>
                 <a href="/posts/<%=post.id%>/comments" class="comment-btn"><%= post.comments.length %> <i class="fa-regular fa-comment"></i></a>
                 <a class="share-btn"><%= post.shares %> <i class="fa-solid fa-share"></i></i></a>
                 <a class="edit-btn" href="/posts/<%=post.id%>/edit"><i class="fa-solid fa-marker"></i></a>

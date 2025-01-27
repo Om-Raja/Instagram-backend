@@ -18,9 +18,9 @@
         <% for(comment of post.comments){%> 
            <p><%= comment %></p><hr>
         <%} %>
-        
+        <br>
         <form method="post" action="/posts/<%=post.id%>/comments">
-            <input type="text" name="comment" placeholder="Add a comment">
+            <input class="add-comment-box" type="text" name="comment" placeholder="Add a comment">
             <button><i class="fa-regular fa-paper-plane"></i></button>
         </form>
     </div>
