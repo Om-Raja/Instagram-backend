@@ -51,6 +51,14 @@ app.patch("/posts/:id/edit", (req, res)=>{
     res.status(200).redirect("/posts");
 });
 
+app.get("/posts/:id/likes", (req, res)=>{
+  const {id} = req.params;
+  let post = allPostsData.find((p)=>(p.id == id));
+
+  post.likes += 1;
+  res.status(200).redirect("/posts");
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running at localhost: ${PORT}`);
