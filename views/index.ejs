@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <!--should be linked below external libraries-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="/dom.js"></script>
+  </head>
+  <body>
+    <h1>Pinstagram</h1>
+    <div class="feed">
+
+        <% for(post of posts) { %>
+            <div class="post-card">
+                <h3 class="username">
+                    <i class="fa-solid fa-circle-user"></i> <%=post.username%>
+                </h3>
+                <img class="post-img" src="<%= post.src %>" />
+                <div class="btns">
+                <a class="like-btn"><%= post.likes %> <i class="fa-regular fa-heart"></i></a>
+                <a href="/posts/<%=post.id%>/comments" class="comment-btn"><%= post.comments.length %> <i class="fa-regular fa-comment"></i></a>
+                <a class="share-btn"><%= post.shares %> <i class="fa-solid fa-share"></i></i></a>
+            </div>
+            </div>
+            <br>
+            <% } %>
+        </div>
+
+  </body>
+</html>

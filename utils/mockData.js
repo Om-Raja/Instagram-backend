@@ -16,7 +16,7 @@ let posts = [
       "ye comment padhne wale ke maa baap hamesha khush rahe",
     ],
     shares: 12,
-    src: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fwildlife%2F&psig=AOvVaw2PN8B9WFPTAp0NPXIMsg3_&ust=1738064386638000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjN8sLolYsDFQAAAAAdAAAAABAE",
+    src:"pic1.jpg",
     caption: "I love nature 🌳",
   },
   {
@@ -34,7 +34,7 @@ let posts = [
       "kamal ki photo hai",
     ],
     shares: 18,
-    src: "https://www.pexels.com/photo/mountain-during-golden-hour-1236701/",
+    src: "pic2.jpg",
     caption: "Sunset vibes 🌄",
   },
   {
@@ -52,7 +52,7 @@ let posts = [
       "dream destination 🏞️",
     ],
     shares: 25,
-    src: "https://www.pexels.com/photo/forest-during-sunrise-2267693/",
+    src: "pic3.jpg",
     caption: "Misty mornings 🌲",
   },
   {
@@ -70,7 +70,7 @@ let posts = [
       "pure magic!",
     ],
     shares: 14,
-    src: "https://www.pexels.com/photo/aerial-photo-of-body-of-water-1553784/",
+    src: "pic4.jpg",
     caption: "Blue serenity 💙",
   },
   {
@@ -88,7 +88,7 @@ let posts = [
       "love this",
     ],
     shares: 20,
-    src: "https://www.pexels.com/photo/pathway-between-green-trees-276517/",
+    src: "pic5.jpg",
     caption: "Walking through greens 🌳🌿",
   },
   {
@@ -106,7 +106,7 @@ let posts = [
       "best shot ever!",
     ],
     shares: 15,
-    src: "https://www.pexels.com/photo/landscape-photography-of-river-during-golden-hour-4012092/",
+    src: "pic6.jpg",
     caption: "Golden riverside 🌅",
   },
   {
@@ -124,7 +124,7 @@ let posts = [
       "so lovely",
     ],
     shares: 30,
-    src: "https://www.pexels.com/photo/lake-surrounded-by-trees-1545673/",
+    src: "pic7.jpg",
     caption: "Reflections of peace 🌊",
   },
   {
@@ -142,7 +142,7 @@ let posts = [
       "nature ka asli rang",
     ],
     shares: 17,
-    src: "https://www.pexels.com/photo/mountains-covered-in-snow-during-sunset-1415131/",
+    src: "pic8.jpg",
     caption: "Snowy dreams ❄️",
   },
   {
@@ -160,7 +160,7 @@ let posts = [
       "full nature vibes",
     ],
     shares: 19,
-    src: "https://www.pexels.com/photo/photo-of-beach-view-during-golden-hour-2486168/",
+    src: "pic9.jpg",
     caption: "Golden sands 🏖️",
   },
   {
@@ -178,7 +178,7 @@ let posts = [
       "superb location",
     ],
     shares: 12,
-    src: "https://www.pexels.com/photo/scenic-photo-of-mountains-during-sunset-1227520/",
+    src: "pic10.jpg",
     caption: "Mountains and sun ❤️",
   },
   {
@@ -196,7 +196,7 @@ let posts = [
       "pure bliss",
     ],
     shares: 22,
-    src: "https://www.pexels.com/photo/scenic-view-of-lake-against-cloudy-sky-2479322/",
+    src: "pic11.jpg",
     caption: "Lakeside magic 🌅",
   },
 ];
