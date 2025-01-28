@@ -42,7 +42,7 @@ app.get("/posts/:id/edit", (req, res)=>{
     let post = allPostsData.find((p)=>(p.id == id));
     res.render("editPost.ejs", {post});
 });
-app.patch("/posts/:id/edit", (req, res)=>{
+app.patch("/posts/:id", (req, res)=>{
     const {id} = req.params;
     const newCaption = req.body.caption.toString();
     let post = allPostsData.find((p)=>(p.id == id));
@@ -57,6 +57,20 @@ app.get("/posts/:id/likes", (req, res)=>{
 
   post.likes += 1;
   res.status(200).redirect("/posts");
+});
+
+app.delete("/posts/:id/comments", (req, res)=>{
+  const {comment} = req.body;
+  const {id} = req.params;
+  let post = allPostsData.find((p)=>(p.id == id));
+  const index = post.comments.indexOf(comment);
+  post.comments.splice(index, 1);
+  
+  if(!comment){
+  res.status(400).send("Comment is not recieved");
+  }else{
+    res.status(200).redirect(`/posts/${id}/comments`);
+  }
 });
 
 const PORT = process.env.PORT || 3000;

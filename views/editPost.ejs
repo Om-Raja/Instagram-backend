@@ -6,7 +6,7 @@
     <title>Edit post</title>
 </head>
 <body>
-    <form method="post" action="/posts/<%=post.id%>/edit?_method=PATCH">
+    <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
         <textarea name="caption" rows="10" cols="40">
             <%=post.caption%>
         </textarea>

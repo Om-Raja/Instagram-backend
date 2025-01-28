@@ -13,7 +13,7 @@ So, for setting the views directory, you must use:
 `app.set("views", path.join(__dirname, "views"));`
 <br/><br/><br/>
 
-### 2.Path for views when index.js is in the src folder?
+### 2. Path for views when index.js is in the src folder?
 The `path.join` method builds the correct path based on the current location of index.js (where the code is being run).
 
 In your new project:\
@@ -41,18 +41,18 @@ Place your frontend JavaScript file (e.g., `main.js`) in the `public` folder.
 Use `express.static` to serve static files.
 <br><br><br>
 
-### 5.What Does defer Do?
+### 5. What Does defer Do?
 The `defer` attribute ensures that the script is executed only after the entire HTML document has been parsed.  
 Unlike the `async` attribute, `defer` guarantees that scripts are executed in the order they appear in the HTML.\
 `<script defer src="script.js"></script>`
 <br><br><br>
 
-### 6.Order of linking CSS files and CDN
+### 6. Order of linking CSS files and CDN
 External libraries first (like Font Awesome).\
 Custom CSS file second to ensure you can override styles when needed.
 <br><br><br>
 
-### 7.Why Place .env in the Root?
+### 7. Why Place .env in the Root?
 Separation of Concerns: Environment variables are global to the project and not specific to any single folder (like `src`).\
 Easy Access: Libraries like `dotenv` (which is typically used to load environment variables) look for the `.env` file in the root directory by default.
 <br><br><br>
