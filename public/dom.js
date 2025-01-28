@@ -13,7 +13,7 @@ let likeBtns = document.getElementsByClassName("like-btn");
 // Iterate through each button
 for (let btn of likeBtns) {
     btn.addEventListener("click", (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         // Remove the regular heart icon classes
         btn.classList.remove("fa-regular", "fa-heart");
         // Add the solid heart icon classes

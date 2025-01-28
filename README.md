@@ -33,5 +33,30 @@ No, you don’t need to write it like\
 The reason is that `dotenv.config()` is a function call that loads the environment variables from the `.env` file into `process.env`.  
 So you directly use:
 `require('dotenv').config();`
+<br><br><br>
 
+### 4. How to use DOM in backend project?
+To perform DOM manipulation, you'll need a separate JavaScript file for frontend logic. Make sure to:  
+Place your frontend JavaScript file (e.g., `main.js`) in the `public` folder.
+Use `express.static` to serve static files.
+<br><br><br>
 
+### 5.What Does defer Do?
+The `defer` attribute ensures that the script is executed only after the entire HTML document has been parsed.  
+Unlike the `async` attribute, `defer` guarantees that scripts are executed in the order they appear in the HTML.\
+`<script defer src="script.js"></script>`
+<br><br><br>
+
+### 6.Order of linking CSS files and CDN
+External libraries first (like Font Awesome).\
+Custom CSS file second to ensure you can override styles when needed.
+<br><br><br>
+
+### 7.Why Place .env in the Root?
+Separation of Concerns: Environment variables are global to the project and not specific to any single folder (like `src`).\
+Easy Access: Libraries like `dotenv` (which is typically used to load environment variables) look for the `.env` file in the root directory by default.
+<br><br><br>
+
+### 8. Do I need to install `path` to use `path.join()`?
+No, you don’t need to install the `path` module. It is a built-in module in Node.js, so you can use it directly without installing anything.
+<br><br><br>
