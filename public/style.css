@@ -65,6 +65,15 @@ h3{
     font-size: 1.2rem;
     color: rgb(61, 61, 61); 
 }
+.comment-row{
+    display:flex;
+    justify-content: left;
+    align-items:first baseline;
+    margin: 4px 0;
+}
+.fa-trash-can{
+    color:rgb(159, 15, 15);
+}
 
 
 @media(max-width: 450px){

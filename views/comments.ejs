@@ -15,12 +15,19 @@
   </head>
   <body>
     <div class="feed">
-        <% for(let i = 0; i < post.comments.length; i++){%> 
-           <span><p><%= post.comments[i] %></p><hr></span>
-           <form method="post" action="/posts/<%=post.id%>/comments?_method=DELETE">
-            <input type="hidden" name="comment" value="<%=post.comments[i]%>"/>
-            <span><button type="submit"><i class="fa-regular fa-trash-can"></i></button></span>
-           </form>
+        <% for(let i = 0; i < post.comments.length; i++){%>
+          <div class="comment-row">
+            <div>
+              <p><%= post.comments[i] %></p><hr>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div>
+              <form method="post" action="/posts/<%=post.id%>/comments?_method=DELETE">
+               <input type="hidden" name="comment" value="<%=post.comments[i]%>"/>
+               <button type="submit"><i class="fa-regular fa-trash-can"></i></button>
+              </form>
+            </div>
+          </div>
         <%} %>
         <br>
         <form method="post" action="/posts/<%=post.id%>/comments">
